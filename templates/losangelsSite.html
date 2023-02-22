@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Los Angeles Branch</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<div id="logoNav">
+		<div class="logo_container_position">
+			<a id="heading" href="/Users/shahadsuman/files/pythonPractice/Hotel_app_view/templates/index.html">
+				<img src="/images/GGLA_Logos_Final_Horizontal.png" style="height:3em" alt="Girl and Goat">
+			</a>
+			<nav>
+				<a class="links selected" href="#">Home</a>
+				<a class="links" href="#">Menu</a>
+				<a class="links" href="#"> Reservation</a>
+				<a class="links" href="#">about</a>
+				<a class="links" href="#">Private Events</a>
+				<a class="links" href="#">Catering</a>
+				<a class="links" href="#">Gift Cards</a>
+			</nav>
+		</div>
+	</div>
+	<div class="location_container">
+		<div class="hotel_openning_info">
+			<h4>address</h4>
+			<span>555-3 Mateo St</span>
+
+			<span> Los Angeles, CA </span>
+
+		</div>
+		<div class="hotel_openning_info">
+			<h4>hours</h4>
+			<span>Monday - Thursday: 5pm - 9:30pm</span>
+
+			<span>Friday: 5pm - 11pm</span>
+
+			<span>Saturday: 5pm - 11pm </span>
+
+			<span>Sunday: 10am - 2pm // 5pm - 9:30pm</span>
+
+			</span>
+		</div>
+		<div class="hotel_openning_info">
+			<h4>contacts</h4>
+			<span>213-799-4628 </span>
+
+			<span> info.la@girlandthegoat.com</span>
+
+		</div>
+	</div>
+	<div class="salad">
+		<img src="/images/salad.png" alt="salads pic here">
+	</div>
+
+
+	<div class="chef">
+		<div class="chef_img_div"><img
+				src="https://images.squarespace-cdn.com/content/v1/6074918f3b8ac050203258fd/1624639968928-IRMTNRZISIGAXAO94Q49/Two-Chefs-In-Kitchen.jpg?format=1500w"
+				alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+		</div>
+		<div class="chef_txt">
+			<h4>GIRL & THE GOAT LOS ANGELES</h4>
+			<span>In summer 2021, Girl & the Goat went west for sunny skies and new culinary adventures. Chef Stephanie
+				Izard and
+				her team are thrilled to be part of LA’s vibrant restaurant community and take advantage of the area’s
+				incredible bounty of produce and long growing seasons. While Girl & the Goat shares the global influence
+				and
+				bold flavors of its Chicago flagship, the culinary team is always crafting new dishes inspired by
+				California
+				produce and local flavors.</span>
+		</div>
+	</div>
+	<div class="salad" id="salad3">
+		<img src="/images/salad3.jpg" alt="salad3">
+	</div>
+	<h2>Happenings</h2>
+	<div class="container container_small_screen">
+		<div class="beverage">
+			<img src="https://images.squarespace-cdn.com/content/v1/6074918f3b8ac050203258fd/6f24fce4-7945-458d-9859-777bc750377a/GGLA-Bubbly+Toast.jpg?format=1500w"
+				alt="">
+		</div>
+		<div class="valentine_box">
+			<h4 class="valentine_txt">"Valentine’s Day Prix Fixe Dinner"</h4>
+			<strong>February 14th</strong>
+
+			<p>
+				Goat romantic with us this Valentine’s Day! Treat your sweetheart to a decadent prix-fixe dinner on
+				February 14th, featuring parallel menus with our Chicago location. Our twinkling patio, intimate atrium,
+				and dimmed dining room create the perfect ambiance for the most romantic day of the year. The full
+				beverage menu will be available for à la carte purchase.
+
+
+				<span>Space is limited, reserve your table for a memorable night.</span>
+			</p>
+			<div class="reserveBtn">
+				<button>Reserve your Table</button>
+			</div>
+		</div>
+	</div>
+	<section class="last_section">
+		<img src="/images/Footer_Background01.png" alt="">
+		<div class="last_section_mailing">
+			join our her, and our mailing list!
+			<div>
+				<button>sign me up</button>
+			</div>
+			<h4 style="font-size: 25px;">Bring Chef Stephanie Izard’s bold, restaurant flavors home with <a href="#">This Little Goat!</a></h4>
+			<p style="color: #696767;">© 2023 Boka Restaurant Group, LLC. All Rights Reserved
+				<a href="#">| Accessibility | </a> 
+				<a href="#">Privacy Policy</a>
+				<a href="#"> | Site Map |</a>
+				<a href="#">Employment </a>
+				<a href="#">| Instagram | </a>
+				<a href=""> Facebook</a>
+			</p>
+
+		</div>
+		</div>
+
+	</section>
+	<script>
+
+		window.onload = function () {
+			// Array of Images
+			var backgroundImg = ["https://images.squarespace-cdn.com/content/v1/6074918f3b8ac050203258fd/a30cae6a-09f6-4d8d-851b-2581f26e13ea/GNG_LA_3622-2+smaller.jpg?format=2500w",
+				"https://images.squarespace-cdn.com/content/v1/6074918f3b8ac050203258fd/66d66fce-0e76-49d9-a0d1-ef0da8c7416f/GALDOPHOTO_17June2021_GG+LAX_HG170.jpg?format=2500w",
+				"https://images.squarespace-cdn.com/content/v1/6074918f3b8ac050203258fd/1654626023312-YVHX9PAP35T1N8F9H91X/GALDOPHOTO_16June2021_GG%2BLAX_HG084.jpg?format=2500w"
+			]
+			setInterval(changeImage, 2000);
+			function changeImage() {
+				var i = Math.floor((Math.random() * 3));
+				var x = document.getElementById("logoNav");
+				// document.x.style.backgroundImage = "url('" + backgroundImg[i] + "')";
+				document.getElementById("logoNav").style.backgroundImage = "url('" + backgroundImg[i] + "')";
+			}
+		}
+
+	</script>
+</body>
+
+</html>
