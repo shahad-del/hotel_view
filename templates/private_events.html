@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>private events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/events.css">
+</head>
+<body>
+    
+    <div class="backgroundImage">
+        <div class="logo_container_position">	
+			<!-- <div class="logoImg"><img src="/images/GGLA_Logos_Final_Horizontal.png" style="height:3em" alt="Girl and Goat"></div> -->
+            <h4 class="logoImg">Girl & The Goat</h4>
+			</a>
+			<nav>
+				<a class="links selected" href="#">Home</a>
+				<a class="links" href="#">Menu</a>
+				<a class="links" href="#"> Reservation</a>
+				<a class="links" href="#">Private Events</a>
+				<a class="links" href="#">Catering</a>
+				<a class="links" href="#">Gift Cards</a>
+			</nav>
+		</div>
+        <h1>PRIVATE EVENTS</h4>
+        <p>With varied indoor and outdoor spaces and a colorful, seasonal menu, Girl & The Goat is the ideal backdrop for your event. Work directly with our events team to decide your menu, seating and details — and our creative culinary team, led by Stephanie Izard, will take care of the rest. </p>
+        <h1>Your Contact Information</h4>
+        <div class="contact">
+            <div>
+              <label for="first-name-input">First name</label>
+              <input type="text" id="first-name-input">
+              
+              <label for="email-input">Email Address *</label>
+              <input type="text" id="email-input">
+              
+              <label for="phone-input">Phone No.*</label>
+              <input type="text" id="phone-input">
+            </div>
+            <div>
+              <label for="last-name-input">Last Name *</label>
+              <input type="text" id="last-name-input">
+              
+              <label for="ext-input">Ext.*</label>
+              <input type="text" id="ext-input">
+            </div>
+        </div>
+        <h1>Select your desired event style</h4>
+        <div class="event_style" >
+            <h5>Event style</h1>
+          <select name="" id="">
+            <option value="on-premise">
+                on-premise
+            </option>
+            <option value="pick up catering">
+                pick up catering
+            </option>
+            <option value="Drop off catering" disabled>
+                Drop off catering
+            </option>
+            <option value="full service catering">
+                full service catering
+            </option>
+          </select>
+        </div>
+        
+        <h1>Your Event Details</h1>
+        <div class="event_info">
+            <label for="nature_event">Nature of this Event(e.g., Birthday Party or Business Dinner)</label>
+            <input type="text" id = "nature_event">
+            <label for="event_date">Event Date</label>
+            <input type="text" id = "event_date">
+            <div class="time">
+                <div>
+                    <label for="start_time">Start Time</label>
+                    <input type="text" id = "start_time" value="06:00 PM">
+                </div>
+                <div>
+                    <label for="end_time">End Time</label>
+                    <input type="time" id = "end_time">
+                </div>
+            </div>
+            <label for="add_info">Is there any additional information you would like to add?</label>
+            <textarea name="add_info" id="add_info" cols="60" rows="5"></textarea>
+            
+            <div class="event_info">
+                <h5>How did you hear about us?</h1>
+              <select name="source" id="source">
+                <option value="pick up catering">
+                    facebook
+                </option>
+                <option value="on-premise">
+                    instagram
+                </option>
+                <option value="Drop off catering" disabled>
+                    Twitter
+                </option>
+                <option value="full service catering">
+                    tiktok
+                </option>
+                <option value="other"style="display: none;">Select an option</option>
+              </select>
+            </div>
+        </div>
+        <button type="submit">submit</button>
+
+    </div>
+    <script>
+        // set "Other" as the default value
+        document.getElementById("source").value = "other";
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,78 @@
+body{
+    color: white;
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    
+}
+.logo_container_position{
+    text-align: center;
+}
+.logoImg{
+    /* margin:3.5em; */
+    font-size: 5em;
+    margin: auto;
+    font-weight: lighter;
+    
+}
+nav a{
+    margin:0.1em;
+    text-decoration: none;
+    color:white; 
+}
+input{
+  margin-bottom: 1.5em;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* justify-content: space-between; */
+  }
+  
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    /* margin-right:5em; */
+  }
+  div label{
+    margin-bottom: 0.5em;
+  }
+p{
+   font-size: 1em;
+   line-height: 2em;
+}
+select{
+    padding:0.5em;
+}
+.backgroundImage{
+  background:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),  url("/images/private_events.webp"); 
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding-left:5em;  
+}
+h5{
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+.event_info{
+  width:50%;
+}
+.event_info #nature_event,textarea, #source{
+  width:90%;
+}
+.event_info label{
+  display:block;
+  word-spacing: 0.1em;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1em;
+}
+.time{
+  display:flex;
+  gap: 6em;
+}
+@media screen and (max-width: 800px){
+  .event_info{
+    width: 80%;
+  }
+}

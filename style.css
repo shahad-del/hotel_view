@@ -28,7 +28,7 @@ body{
 	text-align: center;	
 	background-repeat:no-repeat;
 	background-size:cover;
-	position: :sticky;
+	position:sticky;
 	/* -webkit-transition: all 2s linear;
 	-moz-transition: all 2s linear;
 	-o-transition: all 2s linear;
@@ -55,6 +55,10 @@ nav a{
 	text-decoration: none;
 	color:white;
 	padding: 1em 0.5em;	
+}
+
+.fixedBackgroundImg{
+	background-image:url(/images/GNG_LA_3622-2+smaller.jpg);
 }
 
 .location_container{
@@ -216,6 +220,22 @@ h2{
 		background-color:#a17f41;	
 	}
 
+}
+
+
+/* Reservation html page style */
+.booking_info h1,h5{
+	color:white;
+}
+.book_table{
+	background: black;
+	width: 10em;
+	margin: 0.5rem auto;
+	padding:0.1rem;
+}
+.booking_info div input{
+	margin:1.5rem;
+	padding:0.5rem;
 }
 @media only screen and (max-width: 1160px)
 {
